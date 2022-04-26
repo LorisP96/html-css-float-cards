@@ -45,7 +45,8 @@ img {
 .col {
     float: left;
     width: calc(100%/3);
-    padding: 12px;
+    padding: 20px;
+    padding-bottom: 0;
 }
 
 .card {
@@ -64,4 +65,12 @@ img {
     color: white;
     line-height: 30px;
     padding-left: 10px;
+}
+
+.col:nth-child(3n+0) {
+    padding-left: 0;
+}
+
+.col:nth-child(1n+2) {
+    padding-right: 0;
 }

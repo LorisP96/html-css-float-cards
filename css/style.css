@@ -5,6 +5,7 @@
     font-family: 'Fredoka', sans-serif;
 }
 
+/* contenitori e layout */
 body {
     width: 70%;
     margin: auto;
@@ -15,6 +16,27 @@ header {
     text-align: center;
     line-height: 30px;
 }
+
+.col {
+    float: left;
+    width: calc(100%/3);
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.card {
+    width: 100%;
+    background-color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content {
+    float: left;
+    color: white;
+    line-height: 30px;
+    padding-left: 10px;
+}
+/* fine contenitori e layout */
 
 h1 {
     color: #e53170;
@@ -42,30 +64,10 @@ img {
     color: #00a9f4;
 }
 
-.col {
-    float: left;
-    width: calc(100%/3);
-    padding: 20px;
-    padding-bottom: 0;
-}
-
-.card {
-    width: 100%;
-    background-color: black;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 .card::after {
     clear: both;
     content: '';
     display: table;
-}
-
-.content {
-    float: left;
-    color: white;
-    line-height: 30px;
-    padding-left: 10px;
 }
 
 .col:nth-child(3n+0) {

@@ -2,4 +2,66 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+}
+
+header, main {
+    width: 70%;
+    margin: auto;
+}
+
+header {
+    margin-top: 100px;
+    text-align: center;
+    line-height: 30px;
+}
+
+h1 {
+    color: #e53170;
+    margin-bottom: 40px;
+}
+
+main p:first-child {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.clearfix::after {
+    clear: both;
+    content: '';
+    display: table;
+}
+
+img {
+    width: 100px;
+    float: left;
+}
+
+.card a {
+    text-decoration: none;
+    color: #00a9f4;
+}
+
+.col {
+    float: left;
+    width: calc(100%/3);
+    padding: 12px;
+}
+
+.card {
+    width: 100%;
+    background-color: black;
+}
+
+.card::after {
+    clear: both;
+    content: '';
+    display: table;
+}
+
+.content {
+    float: left;
+    color: white;
+    line-height: 30px;
+    padding-left: 10px;
 }

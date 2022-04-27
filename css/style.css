@@ -21,7 +21,6 @@ header {
     float: left;
     width: calc(100%/3);
     padding: 20px;
-    padding-bottom: 0;
 }
 
 .card {
@@ -31,10 +30,10 @@ header {
 }
 
 .content {
-    float: left;
+    width: calc(100% - 110px);
+    float: right;
     color: white;
     line-height: 30px;
-    padding-left: 10px;
 }
 /* fine contenitori e layout */
 
@@ -68,12 +67,4 @@ img {
     clear: both;
     content: '';
     display: table;
-}
-
-.col:nth-child(3n+0) {
-    padding-left: 0;
-}
-
-.col:nth-child(1n+2) {
-    padding-right: 0;
 }
